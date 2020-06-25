@@ -1,72 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Document</title>
+    <script src="js/book-table.js"></script>
+    <script src="js/main.js"></script>
+    <title>Circus Restaurant</title>
 </head>
-
 <body>
-
-    <nav class="mynavbar " id="mynavbar">
-        <a href="landing-page.html" class="imglogo"><img src="images/logo.jpg" alt="logo"></a>
-        <a href="landing-page.html" style="padding-left: 20vw;">Circus Restaurant</a>
-        <div style="float: right;" class="topnav">
-            <a href="landing-page.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="book-table.html">Book Table</a>
-            <a href="circus-acts.html">Circus Act</a>
-            <a href="book-taxi.html">Book Taxi</a>
-        </div>
-    </nav>
-
+</div>
+<nav class="mynavbar" id="mynavbar">
+  <a href="landing-page.html" class="imglogo"><img src="images/logo.jpg" alt="logo"></a>
+  <a href="landing-page.html" style="padding-left: 20vw;">Circus Restaurant</a>
+  <div style="float: right;" class="topnav">
+    <a href="landing-page.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="book-table.html">Book Table</a>
+    <a href="circus-acts.html">Circus Act</a>
+    <a href="book-taxi.html">Book Taxi</a>
+  </div>
+</nav>
     <main>
         <centre>
+            <div id="booktable">Book a Table</div>
             <form>
-                <h1>Book a Table</h1>
-                <form>
-                    <label>Enter booking date</label>
-                    <input type="datetime-local">
-                    </br>
-                    <label>Number of Guests:</label>
-                    <input type="number" id="noOfGuests" name="noOfGuests" min="0" max="100" step="1"><br>
-                    <label class="container">Kids
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Vegan
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Gluten Free
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="container">Dairy Free
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    </label>
-                    </br>
-                    <div id="confirm">
-                        <div class="message">Congratulation! Your table is booked.</div>
-                        <button class="yes">OK</button>
-                    </div>
-                    <input type="button" onclick="postMessage()" value="Book">
-
-                </form>
-        </centre>
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2020 &dash; TeamOne AB</p>
-    </footer>
-    <script src="js/main.js"></script>
+              <div>
+    <label class="container">Enter booking date</label>
+    <input type="datetime-local" id="datetime"  name="datetime"/>
+    </br>
+    <label class="container">Number of Guests:</label>
+    <input type="number" min="0" max="100" step="1" id="guests"/><br>
+    <label class="container">Kids
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Vegan
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Gluten Free
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Dairy Free
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </br>
+    <div id = "confirm">
+        <div class = "message">Your table is booked !</div>
+        <button class = "yes">OK</button>
+     </div>
+      <input type="button" onclick="postMessage()" value="Book"> 
+    </div>  
+</form>
+</centre>
+</main>
+<footer>
+  <hr>
+  <p>&copy; 2020 &dash; TeamOne AB</p>
+</footer>
 </body>
-
 </html>

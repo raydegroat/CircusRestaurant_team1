@@ -8,22 +8,6 @@ function postMessage(msg, myYes) {
   confirmBox.show();
 }
 
-$(document).ready(function(){
-
-  //  Variable to hold counter to register the quantity of menu items for order
-  let wheelCounter = '<input type="number" id="quantity" name="quantity" min="1" max="10" style="width: 30px" value="1" >';
-                  
-
-      jQuery('.name').click(function(){
-          $("#order").append(wheelCounter+' '+ $(this).text()+'<br>');
-         console.log($(this).text());
-      });
-
-      jQuery("#placeorder").click(function(){
-          alert("Thank you for your order!");
-      })
-  });
-
 /*window.onscroll = function () { myFunction() };
 
 var navbar = document.getElementById("mynavbar");
@@ -37,10 +21,10 @@ function myFunction() {
   }
 }*/
 
-/*$(window).bind('scroll', function () {
+$(window).bind('scroll', function () {
     if ($(window).scrollTop()) {
         $('#mynavbar').addClass('sticky');
     } else {
         $('#mynavbar').removeClass('sticky');
     }
-});*/
+});
