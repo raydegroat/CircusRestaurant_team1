@@ -260,15 +260,12 @@ label {
  /* Properties of the items within the dish selections */
 
  #dish .name {
+  padding-top: 2%;
    text-align: left;
  }
 
- #dish .food_text {
-  font-family: 'Tangerine';
-  text-align: left;
- }
-
  #dish .price {
+   padding-right: 2%;
     font-family:'Tangerine';
     font-size: smaller;
     text-align: right;
@@ -278,5 +275,6 @@ label {
   font-family: 'Tangerine', cursive;
   font-size: 3vw;
   font-weight: bold;
+  text-align: left;
   color: white;
  }
