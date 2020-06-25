@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <nav class="topnav">
-        <a href="landing-page.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="book-table.html">Book Table</a>
-        <a href="circus-acts.html">Circius Act</a>
-        <a href="book-taxi.html">Book Taxi</a>
+  
+    <nav class="mynavbar" id="mynavbar">
+        <a href="landing-page.html" class="imglogo"><img src="images/logo.jpg" alt="logo"></a>
+        <a href="landing-page.html" style="padding-left: 20vw;">Circus Restaurant</a>
+        <div style="float: right;" class="topnav">
+          <a href="landing-page.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="book-table.html">Book Table</a>
+          <a href="circus-acts.html">Circus Act</a>
+          <a href="book-taxi.html">Book Taxi</a>
+        </div>
     </nav>
+    
 
-    <div>
-        <img src="images/ads.jpg" alt="adverting" width="auto" height="auto" class="ads">
+    <div id="adimage">
+        <img src="images/ads.jpg" class="ads">
+    </div>
+    <div id="upcomingevent">
         <p>Weekend of June 26 & 27 - The Brothers Karamazov is a passionate philosophical novel set 
             in 19th-century Russia, that enters deeply into the ethical debates of God, free will,
             and morality.</p>
@@ -31,18 +41,31 @@
         </p>
     </div>
 
-    <div>
-        <a href="#book-circius.html"><img src="images/circo.jpg" alt="book circius" width="auto" height="auto"></a>
-    </div>
-    <div>
-        <iframe src="images/restaurantmap.PNG"
-         width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-        <ul>
-            <li>Address: Södra Blasieholmshamnen 8, 103 27 Stockholm </li>
-            <li>Phone Number: +4686793500</li>
-        </ul>                
-    </div>
+    <!--<div class="bookinglink">
+        <a href="circus-acts.html"><img src="images/circo.jpg" alt="book circius" width="auto" height="auto"></a>
+    </div>-->
+    <button onclick="window.location.href='circus-acts.html'" class="btnbook">Book Now</button>
 
+    <div class="contact">
+      <h2>Contact</h2>
+      <table>
+        <tr>
+          <td><img class="map" src="images/restaurantmap.PNG"></img></td>
+          <td>
+            <ul class="address">
+              <li><p>Address: Södra Blasieholmshamnen 8, 103 27 Stockholm</p></li>
+              <li><p> Tel: +4686793500</p></li>
+              <li><p>Fax: +4686118686</p></li>
+              <li><p>info@circiusrestaurant.se</p></li>
+            </ul>  
+          </td>
+        </tr>
+      </table>              
+    </div>
+    <footer>
+      <hr>
+      <p>&copy; 2020 &dash; TeamOne AB</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="mynavbar">
+        <a href="landing-page.html" class="imglogo"><img src="images/Taxi.jpg" alt="logo"></a>
+        <a href="landing-page.html" style="padding-left: 180px;">Circus Restaurant</a>
+        <div class="topnav" style="float: right;">
+            <a href="landing-page.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="book-table.html">Book Table</a>
+            <a href="circus-acts.html">Circus Act</a>
+            <a href="book-taxi.html">Book Taxi</a>
+        </div>
+    </nav>
+    <table class="booktaxi">
+        <caption id="title">Book a Taxi</caption>
+    </table>
+    <div class="position">
+        <tr>
+            <td>
+                <p>First Name</p><textarea name="firstname" id="fname" cols="40" rows="1"></textarea>
+            </td>
+            <td>
+                <p>Last Name</p><textarea name="lastname" id="lname" cols="40" rows="1"></textarea>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>Address</p><textarea name="address" id="Address" cols="40" rows="1"></textarea>
+            </td>
+            <td>
+                <p>Email Address</p><textarea name="emailadd" id="email" cols="40" rows="1"></textarea>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>City</p><select id="city" textarea name="city" cols="40" rows="1"></textarea>
+                    <option value="stock">Stockholm</option>
+                    <option value="peking">Peking</option>
+                    <option value="vegas">Las Vegas</option>
+                    <option value="Bucharest">Bucharest</option>
+                </select>
+            </td>
+            <td>
+                <p>Area/County</p><textarea name="arcounty" id="areacounty" cols="40" rows="1"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Postcode</p><textarea name="postc" id="postcode" cols="40" rows="1"></textarea>
+            </td>
+            <td>
+                <p>Country</p><select id="country" textarea name="country" cols="40" rows="1"></textarea>
+                    <option value="swe">Sweden</option>
+                    <option value="china">China</option>
+                    <option value="usa">USA</option>
+                    <option value="romania">Romania</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>Telephone</p><textarea name="tel" id="Phone" cols="40" rows="1"></textarea>
+            </td>
+
+        </tr>
+    </div>
+    <div class="pos">
+        <a href="book-taxi.html" class="button" style="background-color:goldenrod"
+            onclick="confirm('Taxi is on the way!')">Book</a>
+        <input class="checkbox" type="checkbox" /><label for="checkbox">Pick me at the Restaurant</label>
+
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy; 2020 &dash; TeamOne AB</p>
+    </footer>
+</body>
+
+</html>
