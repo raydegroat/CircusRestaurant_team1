@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 
 <body>
 
-    <nav class="mynavbar">
+    <nav class="mynavbar " id="mynavbar">
         <a href="landing-page.html" class="imglogo"><img src="images/Taxi.jpg" alt="logo"></a>
-        <a href="landing-page.html" style="padding-left: 180px;">Circus Restaurant</a>
-        <div class="topnav" style="float: right;">
+        <a href="landing-page.html" style="padding-left: 20vw;">Circus Restaurant</a>
+        <div style="float: right;" class="topnav">
             <a href="landing-page.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="book-table.html">Book Table</a>
@@ -22,73 +23,53 @@
             <a href="book-taxi.html">Book Taxi</a>
         </div>
     </nav>
-    <table class="booktaxi">
-        <caption id="title">Book a Taxi</caption>
-    </table>
-    <div class="position">
-        <tr>
-            <td>
-                <p>First Name</p><textarea name="firstname" id="fname" cols="40" rows="1"></textarea>
-            </td>
-            <td>
-                <p>Last Name</p><textarea name="lastname" id="lname" cols="40" rows="1"></textarea>
-            </td>
 
-        </tr>
-        <tr>
-            <td>
-                <p>Address</p><textarea name="address" id="Address" cols="40" rows="1"></textarea>
-            </td>
-            <td>
-                <p>Email Address</p><textarea name="emailadd" id="email" cols="40" rows="1"></textarea>
-            </td>
+    <main>
+        <centre>
+            <form>
+                <h1 class="bktaxi">Book a Taxi</h1>
+                <form>
+                    
+                    <label>First Name</label>
+                    <input type="text" id="fname" name="fname" min="0" max="50"><br>
+                    <label>Last Name</label>
+                    <input type="text" id="lname" name="lname" min="0" max="50"><br>
+                    
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" min="0" max="50"><br>
+                    <label>Address</label>
+                    <input type="text" id="address" name="address" min="0" max="50"><br>
+                    <label>City</label>
+                    <input type="text" id="city" name="city" min="0" max="50"><br>
+                    <label>Postcode</label>
+                    <input type="text" id="postcode" name="postcode" min="0" max="50"><br>
+                    <label>Country</label>
+                    <input type="text" id="country" name="country" min="0" max="50"><br>
+                    <label>Telephone</label>
+                    <input type="text" id="tel" name="tel" min="0" max="50"><br>
+                    
+                    
+                    <label class="container">Pick me up at the Restaurant.
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    </br>
+                    <div id="confirm">
+                        <div class="message">Taxi is on the way!</div>
+                        <button class="yes">OK</button>
+                    </div>
+                    <input type="button" onclick="postMessage()" value="Book">
 
-        </tr>
-        <tr>
-            <td>
-                <p>City</p><select id="city" textarea name="city" cols="40" rows="1"></textarea>
-                    <option value="stock">Stockholm</option>
-                    <option value="peking">Peking</option>
-                    <option value="vegas">Las Vegas</option>
-                    <option value="Bucharest">Bucharest</option>
-                </select>
-            </td>
-            <td>
-                <p>Area/County</p><textarea name="arcounty" id="areacounty" cols="40" rows="1"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Postcode</p><textarea name="postc" id="postcode" cols="40" rows="1"></textarea>
-            </td>
-            <td>
-                <p>Country</p><select id="country" textarea name="country" cols="40" rows="1"></textarea>
-                    <option value="swe">Sweden</option>
-                    <option value="china">China</option>
-                    <option value="usa">USA</option>
-                    <option value="romania">Romania</option>
-                </select>
-            </td>
-
-        </tr>
-        <tr>
-            <td>
-                <p>Telephone</p><textarea name="tel" id="Phone" cols="40" rows="1"></textarea>
-            </td>
-
-        </tr>
-    </div>
-    <div class="pos">
-        <a href="book-taxi.html" class="button" style="background-color:goldenrod"
-            onclick="confirm('Taxi is on the way!')">Book</a>
-        <input class="checkbox" type="checkbox" /><label for="checkbox">Pick me at the Restaurant</label>
-
-    </div>
+                </form>
+        </centre>
+    </main>
 
     <footer>
         <hr>
         <p>&copy; 2020 &dash; TeamOne AB</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

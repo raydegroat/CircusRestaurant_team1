@@ -151,11 +151,13 @@ body {
     text-align: center;
     
   }
+
+  
   /* Dmitris code for Book a taxi.*/
 
 
 /* Position and design for booking fields */
-
+/*
 .booktaxi {
   padding-top: 150px;
   width: 100%;
@@ -166,8 +168,9 @@ body {
   margin: auto;
   width:50%; 
   color: goldenrod;  
- }
+ }*/
  /* Design and position for book button*/
+ /*
  .button {
   
   display:inline-block;
@@ -203,8 +206,9 @@ div.pos {
   margin-bottom: 2%;
   margin-left:48%; 
   margin-right:1%;
-}
+}*/
 /* checkbox position and text */
+/*
 .checkbox
 {
   color: goldenrod;
@@ -217,7 +221,7 @@ div.pos {
 label {
   color:goldenrod;
   
-}
+} */
 
 /* Restaurant Menu Ordering CSS */
 
