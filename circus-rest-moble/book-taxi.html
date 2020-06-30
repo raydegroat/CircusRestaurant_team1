@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/book-table.js"></script>
+    <title>Circus Restaurant</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky">
+        <a href="landing-page.html" class="imglogo"><img src="images/logo.jpg" alt="logo"></a>
+        <h1 class="pl-5 restaurantname">Circus restaurant</h1>
+        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#mynavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-primary"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse " id="mynavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item pl-2 active">
+                    <a class="nav-link text-warning" href="landing-page.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning " href="book-table.html">Book Table</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="circus-acts.html">Circus-Acts</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="book-taxi.html">Book-Taxi</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <table class="booktaxi">
+        <h1 class="text-center display-5 pb-4">Book a Taxi</h1>
+    </table>
+    <div class="mx-auto text-center " style="font-size: x-large;">
+        <tr>
+            <td>
+                <p>First Name</p><textarea name="firstname" id="fname" cols="40" rows="1"></textarea>
+            </td>
+            <td>
+                <p>Last Name</p><textarea name="lastname" id="lname" cols="40" rows="1"></textarea>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>Address</p><textarea name="address" id="Address" cols="40" rows="1"></textarea>
+            </td>
+            <td>
+                <p>Email Address</p><textarea name="emailadd" id="email" cols="40" rows="1"></textarea>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>City</p><select id="city" textarea name="city" cols="40" rows="1"></textarea>
+                    <option value="stock">Stockholm</option>
+                    <option value="peking">Peking</option>
+                    <option value="vegas">Las Vegas</option>
+                    <option value="Bucharest">Bucharest</option>
+                </select>
+            </td>
+            <td>
+                <p>Area/County</p><textarea name="arcounty" id="areacounty" cols="40" rows="1"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Postcode</p><textarea name="postc" id="postcode" cols="40" rows="1"></textarea>
+            </td>
+            <td>
+                <p>Country</p><select id="country" textarea name="country" cols="40" rows="1"></textarea>
+                    <option value="swe">Sweden</option>
+                    <option value="china">China</option>
+                    <option value="usa">USA</option>
+                    <option value="romania">Romania</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p>Telephone</p><textarea name="tel" id="Phone" cols="40" rows="1"></textarea>
+            </td>
+
+        </tr>
+    </div>
+    <!--<div class="pos">
+        <a href="book-taxi.html" class="button" style="background-color:goldenrod"
+            onclick="confirm('Taxi is on the way!')">Book</a>
+        
+
+    </div>-->
+
+    <div class="mx-auto text-center" style="font-size: x-large;">
+        <input class="checkbox" type="checkbox" /><label for="checkbox">Pick me at the Restaurant</label>
+    </div>
+    <div class="mx-auto text-center">
+        <input type="button" onclick="postMessage()" value="Book">
+    </div>
+    <div class="" id="confirm">
+        <div class="message">Taxi Booked!</div>
+        <button class="yes">OK</button>
+    </div>
+    <br>
+    <br>
+
+
+    <footer class="pt-5">
+        <hr>
+        <p style="font-size: x-large;">&copy; 2020 &dash; TeamOne AB</p>
+    </footer>
+</body>
+
+</html>

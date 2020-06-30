@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/book-table.js"></script>
+    <script src="js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky">
+        <a href="landing-page.html" class="imglogo"><img src="images/logo.jpg" alt="logo"></a>
+        <h1 class="pl-5 restaurantname">Circus restaurant</h1>
+        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#mynavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-primary"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse " id="mynavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item pl-2 active">
+                    <a class="nav-link text-warning" href="landing-page.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning " href="book-table.html">Book Table</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="circus-acts.html">Circus-Acts</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="book-taxi.html">Book-Taxi</a>
+                </li>
+                <li class="nav-item pl-2">
+                    <a class="nav-link text-warning" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <table class="booktaxi">
+        <caption id="title"></caption>
+        <h1 class="text-center display-5 pb-4">Register an account</h1>
+    </table>
+    <div class="position">
+        <tr>
+            <td>
+                <p class="container">First Name</p><input>
+            </td>
+            <td>
+                <p class="container">Last Name</p><input>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p class="container">Password</p><input type="password" name="password" id="passwd" rows="1">
+            </td>
+            <td>
+                <p class="container">Confirm Password</p><input type="password" name="confirm password" id="cpasswd"
+                    rows="1">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p class="container">Address</p><input>
+            </td>
+            <td>
+                <p class="container">Email Address</p><input type="email">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p class="container">City</p><input type="text">
+
+            </td>
+            <td>
+                <p class="container">Region</p><input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="container">Postcode</p><input type="number">
+            </td>
+            <td>
+                <p class="container">Country</p><input type="text">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p class="container">Telephone</p><input type="tel">
+            </td>
+
+        </tr>
+        <div class="pb-3" id="confirm">
+            <div class="message">You are registered</div>
+            <button class="yes">OK</button>
+        </div>
+        <input type="button" onclick="postMessage()" value="Register">
+        <footer>
+            <hr>
+            <p>&copy; 2020 &dash; TeamOne AB</p>
+        </footer>
+</body>
+
+</html>

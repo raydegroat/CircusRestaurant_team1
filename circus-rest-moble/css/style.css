@@ -1,0 +1,238 @@
+body {
+  background: linear-gradient(to bottom left, #000066 0%, #000000 100%);
+  font-family: 'Tangerine', cursive;
+  color: gold;
+  height: 200vw;
+}
+
+.sticky {
+background-color: darkblue;
+overflow: hidden;
+top: 0;
+width: 100%;
+position: fixed;
+z-index:300;
+}
+
+.restaurantname{
+padding-top: 0;
+padding-bottom: 0;
+margin: 0;
+}
+.navbar a::first-letter {
+  color: red;
+}
+
+.imglogo img{
+  width: 1em;
+  height: 1em;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: x-large;
+  background-color: black;
+}
+  /*property for the logo image*/
+ .imglogo img{
+  width: 4vw;
+  height: 4vw;
+}
+  .topnav a::first-letter {
+    color: red;
+  }
+  #upcomingevent p{
+    font-family: 'Tangerine', cursive;
+    font-size: x-large;
+    font-weight: bold;
+    color: gold;
+  }
+  #upcomingevent p::first-letter{
+    color: red;    
+  }
+  .map {
+    height: 300px;
+    width: 90%;
+  }
+  .address {
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+  }
+  .bookinglink a {
+    padding: 30px;
+    display: block;
+    margin: auto;
+    width: 30%;
+  }
+  .circusActs {
+    padding-top: 20vw;
+    width: 100%;
+  }
+
+
+
+  .description {
+    font-family: 'Tangerine', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    color: gold;
+  }
+  .btnbook {
+    font-family: 'Tangerine', cursive;
+    background-color: red;
+    border: solid 5px black;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    display: block;
+    margin: auto;
+    opacity: 0.6;
+  }
+  .contact {
+    border-top: 1px darkblue;
+    background-color: white;
+  }
+  .contact h2{
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+  footer p{
+    font-family: 'Tangerine', cursive;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    
+  }
+  /* Dmitris code for Book a taxi.*/
+
+
+/* Position and design for booking fields */
+
+.booktaxi {
+  padding-top: 150px;
+  width: 100%;
+}
+
+.position {
+  align-content: center;
+  margin: auto;
+  width:50%; 
+  color: goldenrod;  
+ }
+ /* Design and position for book button*/
+ .button {
+  
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align:center;
+  transition: all 0.2s;
+  }
+  
+  .button:hover{
+  border-color: red;
+  color: blue;
+  font-weight: bold;
+  }
+
+  @media all and (max-width:30em){
+   a.button{
+  display:block;
+  margin:0.2em auto;
+ }
+  }
+  
+
+div.pos {
+  margin-bottom: 2%;
+  margin-left:48%; 
+  margin-right:1%;
+}
+/* checkbox position and text */
+.checkbox
+{
+  color: goldenrod;
+  margin-bottom: 2%;
+  margin-left:10%; 
+  margin-right:1%;
+  
+}
+
+label {
+  color:goldenrod;
+  
+}
+
+/* Restaurant Menu Ordering CSS */
+
+/* Properties of the menu */
+
+
+ /*button*/
+ input[type=button] {
+  padding-left: 50%;
+  margin-bottom: 2vw;
+  width:20vw;
+  padding: 10px;
+  border-radius:5px;
+  border:1px solid black;
+  background-color:red;
+  color: goldenrod;
+  font-size: xx-large;
+  cursor:pointer;
+  font-weight: bold;
+  font-family: 'Tangerine', cursive;
+  }
+/*Book Button on hovee*/
+input[type=button]:hover {
+  background-color:green;
+  }
+  input[type=checkbox] {
+      position: relative;
+        cursor: pointer;
+ }
+ #confirm {
+  display: none;
+  background-color:none;
+  position:absolute;
+  width: 200px;
+  left: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+/*Message styling on click of Book */
+#confirm .message {
+  text-align: left;
+  color:goldenrod;
+  font-size: x-large ;
+  font-family: 'Tangerine', cursive;
+
+}
+.yes{
+background-color: black;
+border: 1px solid #aaa;
+color:goldenrod;
+font-family: 'Tangerine', cursive;
+}
+.forgotpassword {
+  padding-top: 60vw;
+  font-size: x-large;
+  margin: auto;
+  text-align: center;
+}

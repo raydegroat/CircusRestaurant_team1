@@ -1,0 +1,172 @@
+form {
+    width:50%;
+    margin: 0 auto;
+    }
+
+/* Makes responsive fields. Sets size and field alignment.*/
+input, select{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width:80%;
+    border-radius:5px;
+    border:1px solid #FE9E00;
+    }
+
+input[type=number],input[type="date"]{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width:75%;
+    border-radius:5px;
+    border:1px solid goldenrod;
+    font-weight: bold;
+
+}
+/*Date time id*/
+ #datetime{
+  margin-bottom: 20px;
+  width:76%;
+  padding: 10px;
+  border-radius:5px;
+  
+}/*
+.noOfGuests{
+  margin-bottom: 20px;
+  width:15%;
+  padding: 10px;
+  border-radius:5px;
+  
+} */
+/*Book Button Styling*/
+input[type=button] {
+    margin-bottom: 2vw;
+    width:20vw;
+    padding: 10px;
+    border-radius:5px;
+    border:1px solid black;
+    background-color:red;
+    color: goldenrod;
+    font-size: x-large;
+    cursor:pointer;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+    }
+/*Book Button on hovee*/
+input[type=button]:hover {
+    background-color:green;
+    }
+    input[type=checkbox] {
+        position: relative;
+          cursor: pointer;
+   }
+   /*label class for checkbox*/
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size:x-large;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+    color:goldenrod;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color:goldenrod;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a black background */
+  .container input:checked ~ .checkmark {
+    background-color:black;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /*Customized confirm message once the Book button is clicked*/
+  #confirm {
+    display: none;
+    background-color:none;
+    position:absolute;
+    width: 200px;
+    left: 50%;
+    box-sizing: border-box;
+    text-align: center;
+ }
+ /*Message styling on click of Book */
+ #confirm .message {
+    text-align: left;
+    color:goldenrod;
+    font-size: x-large ;
+    font-family: 'Tangerine', cursive;
+
+ }
+ .yes{
+  background-color: black;
+  border: 1px solid #aaa;
+  color:goldenrod;
+  font-family: 'Tangerine', cursive;
+ }
+
+
+ .registeraccount a{
+  cursor: pointer;
+  font-size:x-large;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: bold;
+  font-family: 'Tangerine', cursive;
+  color:goldenrod;
+  text-decoration: none;
+}
+
+
