@@ -9,6 +9,7 @@ input, select{
     margin-bottom: 20px;
     margin-top: 10px;
     width:80%;
+    padding: 15px;
     border-radius:5px;
     border:1px solid #FE9E00;
     }
@@ -18,6 +19,7 @@ input[type=number],input[type="date"]{
     margin-bottom: 20px;
     margin-top: 10px;
     width:75%;
+    padding: 15px;
     border-radius:5px;
     border:1px solid goldenrod;
     font-weight: bold;
@@ -40,14 +42,14 @@ input[type=number],input[type="date"]{
 } */
 /*Book Button Styling*/
 input[type=button] {
-    margin-bottom: 2vw;
-    width:20vw;
+    margin-bottom: 20px;
+    width:20%;
     padding: 10px;
     border-radius:5px;
     border:1px solid black;
     background-color:red;
     color: goldenrod;
-    font-size: x-large;
+    font-size:40px;
     cursor:pointer;
     font-weight: bold;
     font-family: 'Tangerine', cursive;
@@ -67,7 +69,7 @@ input[type=button]:hover {
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size:x-large;
+    font-size:30px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -137,6 +139,8 @@ input[type=button]:hover {
     position:absolute;
     width: 200px;
     left: 50%;
+    margin-left: -100px;
+    padding: 6px 8px 8px;
     box-sizing: border-box;
     text-align: center;
  }
@@ -144,7 +148,7 @@ input[type=button]:hover {
  #confirm .message {
     text-align: left;
     color:goldenrod;
-    font-size: x-large ;
+    font-size: 30px ;
     font-family: 'Tangerine', cursive;
 
  }
@@ -155,18 +159,5 @@ input[type=button]:hover {
   font-family: 'Tangerine', cursive;
  }
 
-
- .registeraccount a{
-  cursor: pointer;
-  font-size:x-large;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-weight: bold;
-  font-family: 'Tangerine', cursive;
-  color:goldenrod;
-  text-decoration: none;
-}
 
 
