@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <title>Circus Restaurant</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky">
+    <a href="landing-page.html" class="imglogo"><img src="images/logo.jpg" alt="logo"></a>
+    <h1 class="pl-5 restaurantname">Circus restaurant</h1>
+    <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#mynavbar"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-primary"></span>
+    </button>
+
+    <div class=" collapse navbar-collapse " id="mynavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item pl-2 active">
+          <a class="nav-link text-warning" href="landing-page.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link text-warning" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link text-warning " href="book-table.html">Book Table</a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link text-warning" href="circus-acts.html">Circus-Acts</a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link text-warning" href="book-taxi.html">Book-Taxi</a>
+        </li>
+        <li class="nav-item pl-2">
+          <a class="nav-link text-warning" href="login.html">login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pt-5">
+    <div class="pt-3" id="adimage">
+      <img class="col-sm-12" src="images/ads.jpg" class="ads">
+    </div>
+    <div class="col-sm-12" id="upcomingevent">
+      <p>Weekend of June 26 & 27 - The Brothers Karamazov is a passionate philosophical novel set
+        in 19th-century Russia, that enters deeply into the ethical debates of God, free will,
+        and morality.</p>
+
+      <p>Weekend of July 3 & 4 After working with the San Francisco Mime Troupe,
+        the Pickle Family Jugglers (founded by Peggy Snider, Larry Pisoni, and Cecil MacKinnon)
+        decided to create the Pickle Family Circus</p>
+
+      <p>Weekend ofJuly 10 & 11 - Penn & Teller (Penn Jillette and Teller) are American magicians
+        and entertainers who have performed together since the late 1970s, noted for
+        their ongoing act that combines elements of comedy with magic.
+      </p>
+    </div>
+
+    <button class=" btnbook col-sm-3 " onclick="window.location.href='circus-acts.html'">Book Now</button>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="map pl-5" src="images/restaurantmap.PNG"></img>
+        </div>
+        <div class="col-sm-6">
+          <ul class="address">
+            <li>
+              <p>Address: Södra Blasieholmshamnen 8, 103 27 Stockholm</p>
+            </li>
+            <li>
+              <p> Tel: +4686793500</p>
+            </li>
+            <li>
+              <p>Fax: +4686118686</p>
+            </li>
+            <li>
+              <p>info@circiusrestaurant.se</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <hr>
+    <p style="font-size: x-large;">&copy; 2020 &dash; TeamOne AB</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
