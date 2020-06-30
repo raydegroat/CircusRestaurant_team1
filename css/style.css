@@ -30,6 +30,10 @@ body {
     font-size: 80px;
     padding-top: 50px;
   }
+
+  .mobversion {
+    font-size: 2vw;
+  }
    /*property for the navigational bar*/
   .mynavbar a {
     float: left;
