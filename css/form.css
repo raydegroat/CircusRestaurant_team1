@@ -158,6 +158,17 @@ input[type=button]:hover {
   color:goldenrod;
   font-family: 'Tangerine', cursive;
  }
-
+ .registeraccount a{
+  cursor: pointer;
+  font-size:x-large;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: bold;
+  font-family: 'Tangerine', cursive;
+  color:goldenrod;
+  text-decoration: none;
+}
 
 
